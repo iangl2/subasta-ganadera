@@ -1,0 +1,25 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía general */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2E7D32;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+/* ... (el resto del código CSS que te pasé antes) ... */
