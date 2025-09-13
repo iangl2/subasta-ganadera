@@ -1,25 +1,113 @@
-/* Reset */
+/* ========== RESET GENERAL ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Tipografía general */
+/* ========== BODY ========== */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f6fdf7; /* Verde muy suave */
   color: #333;
   background-color: #f5f5f0;
   line-height: 1.6;
 }
 
-/* Header */
+/* ========== HEADER / NAVBAR ========== */
 header {
-  background-color: #2E7D32;
+  background: linear-gradient(90deg, #2e7d32, #388e3c); /* Verde degradado */
+  color: white;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
 }
 
-/* ... (el resto del código CSS que te pasé antes) ... */
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c8e6c9; /* Verde claro */
+}
+
+/* ========== SECCIÓN PRINCIPAL ========== */
+.hero {
+  height: 90vh;
+  background: url("fondo.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-blend-mode: darken;
+  background-color: rgba(46,125,50,0.7); /* Capa verde encima de la imagen */
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 25px;
+}
+
+/* ========== BOTONES ========== */
+.btn {
+  background: #66bb6a; /* Verde medio */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #43a047; /* Verde más oscuro */
+  transform: scale(1.05);
+}
+
+/* ========== SECCIONES GENERALES ========== */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
