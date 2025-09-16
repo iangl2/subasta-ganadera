@@ -25,6 +25,7 @@ header {
   box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
 }
 
+<<<<<<< HEAD
 header h1 {
   font-size: 1.8rem;
 }
@@ -111,3 +112,5 @@ footer {
   padding: 20px;
   margin-top: 50px;
 }
+=======
+>>>>>>> c3f196335dcf81dad0ad1fb5945a169439e94c42
