@@ -25,6 +25,12 @@ header {
   box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
 }
 
+header img {
+  height: 48px;   
+  width: auto;
+  max-width: 120px; 
+}
+
 header h1 {
   font-size: 1.8rem;
 }
@@ -41,18 +47,60 @@ nav a:hover {
   color: #c8e6c9; /* Verde claro */
 }
 
+/* ========== SECCIONES GENERALES ========== */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+
 /* ========== SECCIÓN PRINCIPAL ========== */
-.hero {
-  height: 90vh;
-  background: url("LogoSG.svg") no-repeat center center/cover;
+#hero {
+  height: 85vh;
+  background: 
+    linear-gradient(rgba(36, 97, 39, 0.7), rgba(32, 87, 35, 0.7)),
+    url("../img/Fondo.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-start;   
+  align-items: center;         
+  text-align: left;           
+  color: white;
+  padding-left: 8vw;          
+}
+
+.welcome-message {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  background-blend-mode: darken;
-  background-color: rgba(46,125,50,0.7); /* Capa verde encima de la imagen */
+  align-items: flex-start;    
+  max-width: 600px;   
+}
+
+.welcome-message h1 {
+  margin-bottom: 18px;
+}
+
+.welcome-message p {
+  margin-bottom: 18px;
+  max-width: 500px;
+}
+
+.welcome-subtext {
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #e0ffe0;
 }
 /* Green gradient divider */
 .green-divider {
@@ -178,8 +226,8 @@ section p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px; /* space between image and text */
-  flex-wrap: wrap; /* responsive on small screens */
+  gap: 40px; 
+  flex-wrap: wrap; 
   margin-top: 32px;
 }
 
