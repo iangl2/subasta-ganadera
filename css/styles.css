@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 /* ========== RESET GENERAL ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Bree Serif', serif;
 }
 
 /* ========== BODY ========== */
@@ -37,10 +39,23 @@ header h1 {
 
 nav a {
   color: white;
-  text-decoration: none;
-  margin: 0 15px;
+  text-decoration: none;  
   font-weight: bold;
   transition: color 0.3s ease;
+  position: relative;
+  padding: 0 10px;
+}
+
+nav a:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 18px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 nav a:hover {
@@ -102,7 +117,7 @@ section p {
   font-size: 1rem;
   color: #e0ffe0;
 }
-/* Green gradient divider */
+
 .green-divider {
   height: 50px;
   width: 100%;
@@ -196,24 +211,8 @@ section p {
   transform: scale(1.05);
 }
 
-/* ========== SECCIONES GENERALES ========== */
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
 
-section h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-section p {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  color: #ffffff;
-}
+/* ========== SECCIÓN ABOUT ========== */
 
 #about h2 {
   font-size: 3rem;     
@@ -248,9 +247,8 @@ section p {
   color: #333;
   line-height: 1.8;
 }
+
 /* ========== FOOTER ========== */
-
-
 
 footer {
   background: #2e7d32; 
@@ -369,7 +367,7 @@ footer {
   margin-top: 32px;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 900px) {
   .footer-content {
     flex-direction: column;
