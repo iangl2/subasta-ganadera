@@ -211,6 +211,16 @@ section p {
   transform: scale(1.05);
 }
 
+#upcoming-auctions,
+#about {
+  background: linear-gradient(135deg, #aecf87 60%, #e0f2f1 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(46,125,50,0.06);
+  margin: 40px auto;
+  padding: 60px 20px;
+  max-width: 1200px;
+  
+}
 
 /* ========== SECCIÓN ABOUT ========== */
 
