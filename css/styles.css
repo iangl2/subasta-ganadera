@@ -249,20 +249,138 @@ section p {
   line-height: 1.8;
 }
 /* ========== FOOTER ========== */
+
+
+
 footer {
-  background: #2e7d32;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+  background: #2e7d32; 
+  color: #fff;         
+  padding: 40px 0 0 0;
+  font-size: 1rem;
+  margin-top: 40px;
 }
 
-.footer-content{
+.footer-content {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  gap: 90px;
-  justify-content: center;
   flex-wrap: wrap;
-  height: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  padding: 0 30px;
+}
+
+.footer-brand {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 180px;
+  gap: 12px;
+}
+
+.footer-brand img {
+  height: 150px;
+  margin-bottom: 8px;
+}
+
+.footer-tagline {
+  font-size: 1.05rem;
+  color: #c8e6c9;
+  margin: 0;
+}
+
+.footer-contact {
+  flex: 1 1 220px;
+  min-width: 180px;
+}
+
+.footer-contact h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #c8e6c9;
+  font-size: 0.98rem;
+}
+
+.footer-contact a {
+  color: #c8e6c9;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-contact img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1) opacity(0.7);
+}
+
+.footer-social {
+  flex: 1 1 180px;
+  min-width: 160px;
+}
+
+.footer-social h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-links a img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s;
+}
+
+.footer-social-links a:hover img {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #c8e6c9;
+  border-top: 1px solid #388e3c;
+  padding: 16px 0 8px 0;
+  margin-top: 32px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0 16px;
+  }
+  .footer-brand,
+  .footer-contact,
+  .footer-social {
+    min-width: 0;
+    width: 100%;
+  }
 }
