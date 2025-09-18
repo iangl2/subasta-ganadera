@@ -255,6 +255,7 @@ section p {
   flex-wrap: wrap;
   height: auto;
   text-decoration: none;
+  list-style-type: none;
 }
 
 .auctions-list h3{
