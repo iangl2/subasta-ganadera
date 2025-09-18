@@ -7,170 +7,148 @@
 </head>
 
 <body>
-    <header id="main-header">
-    
-        <a href="/" title="Inicio">
-            <img src="img\LogoSG.png" alt="Logotipo de Subasta Ganadera" />
+    <header id="main-header" role="banner">
+        <a href="/" title="Inicio - Subastas Ganaderas de Panamá">
+            <img src="img/LogoSG.png" alt="Logotipo de Subasta Ganadera de Panamá" />
         </a>
 
-        <nav>
+        <nav role="navigation" aria-label="Navegación principal">
             <ul>
-                <a href="#">Iniciar Sesión</a>
-                <a href="#">Subastas</a>
-                <a href="#">Noticias</a>
-                <a href="#">Contacto</a>
+                <li><a href="#" title="Inicie sesión en su cuenta">Iniciar Sesión</a></li>
+                <li><a href="#" title="Ver próximas subastas ganaderas">Subastas</a></li>
+                <li><a href="#" title="Noticias y novedades del sector">Noticias</a></li>
+                <li><a href="#" title="Formulario de contacto y ubicación">Contacto</a></li>
             </ul>
-
         </nav>
     </header>
-    <main>
 
-                <section id="hero">
+    <main role="main">
+        <section id="hero" aria-labelledby="hero-heading">
             <div class="welcome-message">
-                <h1>Bienvenido a Subasta Ganadera</h1>
+                <h1 id="hero-heading">Bienvenido a Subasta Ganadera</h1>
                 <p>La plataforma líder para subastas de ganado en línea.</p>
-                <p class="welcome-subtext">Te damos la bienvenida al sistema de subasta
-                                            ganadera de Panamá, un espacio creado para 
-                                            productores, compradores y toda la comunidad 
-                                            del campo. Aquí encontrarás información sobre 
-                                            las próximas subastas y podrás mantenerte en 
-                                            contacto con nosotros de manera fácil y transparente. 
-                                            ¡Gracias por ser parte de esta comunidad que impulsa 
-                                            el crecimiento del sector ganadero!</p>
+                <p class="welcome-subtext">
+                    Te damos la bienvenida al sistema de subasta ganadera de Panamá, un espacio creado para 
+                    productores, compradores y toda la comunidad del campo. Aquí encontrarás información sobre 
+                    las próximas subastas y podrás mantenerte en contacto con nosotros de manera fácil y transparente. 
+                    ¡Gracias por ser parte de esta comunidad que impulsa el crecimiento del sector ganadero!
+                </p>
             </div>
         </section>
+
         <div class="green-divider"></div>
-        <section id="upcoming-auctions">
-            <h2>Próximas Subastas</h2>
-            <ul>
-                <div class="auctions-list">
-                    <article>
+
+        <section id="upcoming-auctions" aria-labelledby="auctions-heading">
+            <h2 id="auctions-heading">Próximas Subastas</h2>
+            <ul class="auctions-list">
+                <li>
+                    <article role="article">
                         <div class="image-container">
-                            <img src="/img/Vacas-lecheras.png" alt="Subasta de Vacas Lecheras" width="300"/>
+                            <img src="/img/Vacas-lecheras.png" alt="Subasta de Vacas Lecheras en Rancho El Buen Pastor" width="300"/>
                         </div>
                         <div class="information-container">
                             <h3>Subasta de Vacas Lecheras</h3>
-                            <p>
-                                Fecha: <time datetime="2025-10-15">15 de Octubre, 2025</time>
-                            </p>
-                            <p>
-                                Lugar:
-                            <address>Rancho El Buen Pastor</address>
-                            </p>
-                            <a href="subasta-vacas.html">Ver detalles</a>
+                            <p>Fecha: <time datetime="2025-10-15">15 de Octubre, 2025</time></p>
+                            <p>Lugar: <address>Rancho El Buen Pastor</address></p>
+                            <a href="subasta-vacas.html" title="Ver detalles de la Subasta de Vacas Lecheras">Ver detalles</a>
                         </div>
                     </article>
-                
-
-                
-                    <article>
+                </li>
+                <li>
+                    <article role="article">
                         <div class="image-container">
-                            <img src="/img/Vacas.jpg" alt="Subasta de Ganado Bovino" width="300" />
+                            <img src="/img/Vacas.jpg" alt="Subasta de Ganado Bovino en Hacienda La Esperanza" width="300" />
                         </div>
                         <div class="information-container">
                             <h3>Subasta de Ganado Bovino</h3>
-                            <p>
-                                Fecha: <time datetime="2025-11-22">22 de Noviembre, 2025</time>
-                            </p>
-                            <p>
-                                Lugar:
-                            <address>Hacienda La Esperanza</address>
-                            </p>
-                            <a href="subasta-bovino.html">Ver detalles</a>
+                            <p>Fecha: <time datetime="2025-11-22">22 de Noviembre, 2025</time></p>
+                            <p>Lugar: <address>Hacienda La Esperanza</address></p>
+                            <a href="subasta-bovino.html" title="Ver detalles de la Subasta de Ganado Bovino">Ver detalles</a>
                         </div>
                     </article>
-                
-
-                
-                    <article>
+                </li>
+                <li>
+                    <article role="article">
                         <div class="image-container">
-                            <img src="/img/ImgOvinos.webp" alt="Subasta de Ganado Ovino" width="300"/>
+                            <img src="/img/ImgOvinos.webp" alt="Subasta de Ganado Ovino en Granja Los Pastores" width="300"/>
                         </div>
                         <div class="information-container">
                             <h3>Subasta de Ganado Ovino</h3>
-                            <p>
-                                Fecha: <time datetime="2025-11-30">30 de Noviembre, 2025</time>
-                            </p>
-                            <p>
-                                Lugar:
-                            <address>Granja Los Pastores</address>
-                            </p>
-                            <a href="subasta-ovinos.html">Ver detalles</a>
+                            <p>Fecha: <time datetime="2025-11-30">30 de Noviembre, 2025</time></p>
+                            <p>Lugar: <address>Granja Los Pastores</address></p>
+                            <a href="subasta-ovinos.html" title="Ver detalles de la Subasta de Ganado Ovino">Ver detalles</a>
                         </div>
                     </article>
-                </section>
+                </li>
             </ul>
-        </div>
-        <div class="green-divider"></div>
-        <section id="about">
-            <h2>¿Quiénes somos?</h2>
+        </section>
 
+        <div class="green-divider"></div>
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">¿Quiénes somos?</h2>
             <div class="about-container">
                 <figure class="about-image">
-                    <img src="/img/Equipo.webp" alt="Equipo de la empresa" width="300"/>
+                    <img src="/img/Equipo.webp" alt="Equipo de trabajo de Subasta Ganadera de Panamá" width="300"/>
                 </figure>
-
                 <div class="about-text">
                     <p>
-                        Somos una comunidad de ganaderos, técnicos y entusiastas del 
-                        campo que creemos en el trabajo en conjunto para fortalecer 
-                        el sector ganadero de Panamá. Nuestro sistema de subasta 
-                        nace con la idea de apoyar a los productores, facilitar 
-                        las oportunidades de negocio y crear un espacio transparente
-                        y accesible donde todos podamos crecer y compartir los 
+                        Somos una comunidad de ganaderos, técnicos y entusiastas del campo que creemos en el trabajo en conjunto para fortalecer 
+                        el sector ganadero de Panamá. Nuestro sistema de subasta nace con la idea de apoyar a los productores, facilitar 
+                        las oportunidades de negocio y crear un espacio transparente y accesible donde todos podamos crecer y compartir los 
                         beneficios de la tradición ganadera con la innovación digital.
                     </p>
                 </div>
             </div>
         </section>
-
-
     </main>
-        <footer id="main-footer">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="img/LogoSG.png" alt="Logotipo de Subasta Ganadera" />
-          <p class="footer-tagline">
-            Donde su ganado vale mucho, pero mucho más.
-          </p>
+
+    <footer id="main-footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="img/LogoSG.png" alt="Logotipo de Subasta Ganadera de Panamá" />
+                <p class="footer-tagline">Donde su ganado vale mucho, pero mucho más.</p>
+            </div>
+            <div class="footer-contact">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>
+                        <img src="/img/IconCall.svg" alt="Teléfono" />
+                        <a href="tel:+50760000000">+507 6000-0000</a>
+                    </li>
+                    <li>
+                        <img src="/img/IconMail.svg" alt="Correo electrónico" />
+                        <a href="mailto:mercadeo@subastaganadera.com">mercadeo@subastaganadera.com</a>
+                    </li>
+                    <li>
+                        <img src="/img/IconMap.svg" alt="Dirección" />
+                        Vía Interamericana, Chiriquí, Panamá
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social" role="navigation" aria-label="Redes sociales">
+                <h2>Síguenos en</h2>
+                <div class="footer-social-links">
+                    <a href="https://www.facebook.com/subastaganadera" title="Facebook - Subasta Ganadera" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/IconFacebook.png" alt="Facebook" width="20"/>
+                    </a>
+                    <a href="https://www.twitter.com/subastaganadera" title="Twitter - Subasta Ganadera" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/IconX.png" alt="Twitter" width="20"/>
+                    </a>
+                    <a href="https://www.instagram.com/subastaganadera" title="Instagram - Subasta Ganadera" target="_blank" rel="noopener noreferrer">
+                        <img src="/img/IconInstagram.png" alt="Instagram" width="20"/>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="footer-contact">
-          <h2>Contacto</h2>
-          <ul>
-            <li>
-              <img src="/img/IconCall.svg" alt="" />
-              <a href="tel:+50760000000">+507 6000-0000</a>
-            </li>
-            <li>
-              <img src="/img/IconMail.svg" alt="" />
-              <a href="mailto:mercadeo@subastaganadera.com">
-                mercadeo@subastaganadera.com
-              </a>
-            </li>
-            <li>
-              <img src="/img/IconMap.svg" alt="" />
-              Vía Interamericana, Chiriquí, Panamá
-            </li>
-          </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Subasta Ganadera. Todos los derechos reservados.</p>
+            <p>
+                <a href="/politica-privacidad" title="Política de Privacidad">Política de Privacidad</a> | 
+                <a href="/terminos-remates" title="Términos y Condiciones de Remate">Términos y Condiciones</a> | 
+                <a href="/codigo-etica" title="Código de Ética">Código de Ética</a>
+            </p>
         </div>
-        <div class="footer-social">
-          <h2>Síguenos en</h2>
-          <div class="footer-social-links">
-            <a href="https://www.facebook.com/subastaganadera" title="Facebook" target="_blank" rel="noopener noreferrer">
-              <img src="/img/IconFacebook.png" alt="Facebook" width="20"/>
-            </a>
-            <a href="https://www.twitter.com/subastaganadera" title="Twitter" target="_blank" rel="noopener noreferrer">
-              <img src="/img/IconX.png" alt="Twitter" width="20"/>
-            </a>
-            <a href="https://www.instagram.com/subastaganadera" title="Instagram" target="_blank" rel="noopener noreferrer">
-              <img src="/img/IconInstagram.png" alt="Instagram" width="20"/>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Subasta Ganadera. Todos los derechos reservados.</p>
-      </div>
     </footer>
 </body>
 </html>
