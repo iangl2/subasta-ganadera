@@ -136,11 +136,12 @@ html, body {
 
 .animal_image {
   width: 65%;
+  margin-top: 45px;
   position: relative;
 }
 
 .animal_image img {
-  width: 100%;
+  width: 90%;
   position: absolute;
   left: 0;
   top: 0;
@@ -148,7 +149,7 @@ html, body {
   transition: all 0.3s ease;
 } 
 
-.left-column img.moo_picture {
+.animal_image img.moo_picture {
   opacity: 1;
 }
  
