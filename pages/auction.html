@@ -17,17 +17,28 @@
 
     <main class="auction_details">
         <!-- imagen de las vaquitas -->
-         <div class="animal_image">
+         <div class="animal_details">
             <img class="moo_picture" src="/img/Vacas-lecheras.png" alt="Subasta de Vacas Lecheras en Rancho El Buen Pastor"/>
-         </div>
+            <table class ="animal_table">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Raza</th>
+                    <th>Peso</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table> 
+            
+        </div>
          <!-- detalles de la subasta -->
          <div class="details">
-            <div class="description">
-                <h1>Subasta de Vacas Lecheras</h1>
-                <p>La Subasta de Vacas Lecheras del Rancho El Buen Pastor se realizará el 15 de octubre, reuniendo 
-                a ganaderos y compradores interesados en ejemplares de alto rendimiento. Destacan vacas como 
-                “Estrella 45”, reconocida por su excelente producción, y “Luna Blanca”, una joven con 
-                gran potencial genético.</p>
+            <div class="auction_name">
+                <h1>Subasta de Vacas Lecheras</h1>                
             </div>
             <div class="time_place">
                 <span>Fecha</span>
@@ -37,10 +48,13 @@
                 <span>Comienza en</span>
             </div>
             <div class="price">
-            <span>Puja Más Reciente</span>
-            <h2>$1,200</h2>
-            <button type="button" class="btn btn-primary">Pujar Ahora</button>
-         </div>
+              <div class="price-info">
+                <span>Puja más reciente</span>
+                <h2>$1,200</h2>
+              </div>
+            
+              <a class="btn_pujar" href="#">Pujar Ahora</a>
+            </div>
          </div>       
         
     </main>
