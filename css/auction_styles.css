@@ -21,8 +21,8 @@ html, body {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  gap: 12px;
+  gap: 16px;
+  align-items: flex-start;
 }
 
 .animal_details img {
@@ -32,7 +32,14 @@ html, body {
 } 
 
 .animal_details img.moo_picture {
-  opacity: 1;
+  width: 500px;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  flex: 0 0 auto;
+  background: #fff;
 }
 
 table, th, td {
@@ -45,6 +52,26 @@ table, th, td {
   color: #000000;
   line-height: 24px;
   padding: 10px;
+}
+
+.animal_table {
+  width: 500px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.animal_table th,
+.animal_table td {
+  padding: 10px 12px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;       /* allow wrapping inside fixed cells */
+  word-break: break-word;
 }
 
 .details {
@@ -65,6 +92,12 @@ table, th, td {
   font-family: 'Montserrat', sans-serif;
 }
 
+.auction_name p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
 
 .time_place {
   margin-bottom: 30px;
@@ -151,13 +184,13 @@ table, th, td {
 }
 
 .segment-display-top{
-  background-color: #111;
+  background-color: #507b00;
   color: #eee;
   line-height: 1.5;
 }
 
 .segment-display-bottom{
-  background-color: #333;
+  background-color: #5E8C31;
   color: #fff;
   line-height: 0;
 }
@@ -182,7 +215,7 @@ table, th, td {
   top: 0;
   line-height: 1.5;
   color: #eee;
-  background-color: #111;
+  background-color: #507b00;
   transform-origin: bottom;
 }
 
@@ -190,7 +223,7 @@ table, th, td {
   bottom: 0;
   line-height: 0;
   color: #fff;
-  background-color: #333;
+  background-color: #5E8C31;
   border-top: 1px solid black;
   transform-origin: top;
 }
@@ -220,6 +253,31 @@ table, th, td {
     transform: rotateX(0deg);
   }
 }
+
+/* Labels under each countdown section */
+.time-section::after {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* Spanish labels per section id */
+#days::after    { content: "Días"; }
+#hours::after   { content: "Horas"; }
+#minutes::after { content: "Minutos"; }
+#seconds::after { content: "Segundos"; }
+
+/* Responsive tweak: slightly smaller labels on very small screens */
+@media (max-width: 420px) {
+  .time-section::after {
+    font-size: 11px;
+    margin-top: 6px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 940px) {
   .auction_details {
@@ -237,6 +295,19 @@ table, th, td {
     right: 0;
     top: -65px;
     left: initial;
+  }
+  .animal_details {
+    width: 100%;
+    align-items: center;
+  }
+  .animal_details img.moo_picture,
+  .animal_table {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+  }
+  .animal_table {
+    table-layout: auto;
   }
 }
  
