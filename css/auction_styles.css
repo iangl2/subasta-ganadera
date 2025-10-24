@@ -8,6 +8,7 @@ html, body {
 }
 
 
+
 .auction_details {
   max-width: 1200px;
   margin: 0 auto;
@@ -190,7 +191,7 @@ table, th, td {
   line-height: 0;
   color: #fff;
   background-color: #333;
-  border-top: 2px solid black;
+  border-top: 1px solid black;
   transform-origin: top;
 }
 
