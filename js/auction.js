@@ -139,7 +139,7 @@ function updateAllSegments(targetDateTime){
     }
 
     // Table row values (Nombre, Sexo, Raza, Peso) — replaced 'edad' with 'sexo'
-    const secondRow = document.querySelector(".animal_table tr:nth-child(2)");
+    const secondRow = document.querySelector(".animal_table tbody:nth-child(2)");
     if (secondRow) {
       const tds = secondRow.querySelectorAll("td");
       if (tds.length >= 4) {        
