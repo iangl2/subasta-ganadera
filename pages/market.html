@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Subastas Ganaderas de Panamá - Ganado de Calidad Premium | Remates
+      Ganaderos
+    </title>
+    <meta
+      name="description"
+      content="La mejor subasta ganadera de Panamá. Ganado bovino de raza pura, reproductores de elite, vacas lecheras y toros de calidad. Remates ganaderos transparentes desde 1985."
+    />
+    <meta
+      name="keywords"
+      content="subasta ganadera panamá, ganado bovino, reproductores elite, vacas lecheras, toros reproducción, remate ganadero, ganadería panamá, brahman, angus, holstein"
+    />
+    <meta name="author" content="Subastas Ganaderas de Panamá" />
+    <link rel="stylesheet" href="/css/market.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div data-include="/components/header.html"></div>
+<main class="marketplace">
+  <aside class="filtros">
+    <h2>Filtros</h2>
+    <form>
+      <label>
+        Raza:
+        <select>
+          <option>Brahman</option>
+          <option>Angus</option>
+          <option>Charolais</option>
+        </select>
+      </label>
+
+      <label>
+        Precio máximo:
+        <input type="number" name="precio" placeholder="Ej. 2000" />
+      </label>
+
+      <button type="submit">Aplicar</button>
+    </form>
+  </aside>
+
+  <section class="productos-section">
+    <div class="top-bar">
+      <h2>Subastas disponibles</h2>
+      <button class="crear-subasta">+ Crear Subasta</button>
+    </div>
+
+    <div class="productos">
+      <article class="tarjeta">
+        <img src="vaca1.jpg" alt="Vaca Brahman" />
+        <h3>Vaca Brahman</h3>
+        <p>$1,500</p>
+        <button class="show-more">Ver más...</button>
+      </article>
+
+      <article class="tarjeta">
+        <img src="vaca2.jpg" alt="Vaca Angus" />
+        <h3>Vaca Angus</h3>
+        <p>$1,700</p>
+        <button class="show-more">Ver más...</button>
+      </article>
+    </div>
+  </section>
+</main>
+
+    <div data-include="/components/footer.html"></div>
+
+    <script type="module" src="/js/loadData.js"></script>
+    <script type="module" src="/js/createCards.js"></script>
+    <script src="/js/include.js"></script>
+  </body>
 </html>
