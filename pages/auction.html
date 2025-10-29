@@ -25,10 +25,12 @@
                         <th>Raza</th>
                         <th>Peso</th>
                         <th>Vendedor</th>
+                        <th>Lugar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
@@ -43,14 +45,9 @@
                 <h1>Subasta de Vacas Lecheras</h1>
                 <p>Descripción</p>                
             </div>
-            <div class="time_place">
-                <span>Fecha</span>
-                <h2>15 de Octubre 2025</h2>
-                <span>Lugar</span>
-                <h2>Rancho El Buen Pastor, Chiriquí</h2>    
-            </div>
+            <span>Termina en</span>
             <div class="countdown">
-                <span>Comienza en</span>
+                
                 <div class="time-section" id="days">
                     <div class="time-group">
                         <div class="time-segment">
@@ -147,17 +144,17 @@
                         </div>
                     </div>
                 </div>                
-            </div>
+            </div>            
             <div class="price">
-              <div class="price-info">
                 <span>Puja más reciente</span>
-                <h2>$1,200</h2>
-              </div>
-            
-              <a class="btn_pujar" href="#">Pujar Ahora</a>
+                <h2>$1,200</h2> 
             </div>
+            <div class="bid">
+                <input type="number" id="bid_amount" name="bid_amount" placeholder="Ingresa tu puja">
+                <a class="btn_pujar" href="#">Pujar Ahora</a> 
+            </div>
+            
          </div>       
-        
     </main>
 
     <div data-include="../components/footer.html"></div>

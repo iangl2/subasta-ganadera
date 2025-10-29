@@ -125,18 +125,6 @@ function updateAllSegments(targetDateTime){
     const titleEl = document.querySelector(".auction_name h1") || document.querySelector(".auction_name");
     if (titleEl) titleEl.textContent = item.nombreSubasta || "Subasta";
 
-    // Date & place block
-    const timePlace = document.querySelector(".time_place");
-    if (timePlace && item.fecha) {
-      const d = new Date(item.fecha);
-      const formatted = Number.isNaN(d.getTime()) ? item.fecha : d.toLocaleDateString("es-PA", { day: "numeric", month: "long", year: "numeric" });
-      timePlace.innerHTML = `
-        <span>Fecha</span>
-        <h2>${formatted}</h2>
-        <span>Lugar</span>
-        <h2>${item.lugar || ""}</h2>
-      `;
-    }
 
     // Table row values (Nombre, Sexo, Raza, Peso) — replaced 'edad' with 'sexo'
     const secondRow = document.querySelector(".animal_table tbody:nth-child(2)");
@@ -147,6 +135,7 @@ function updateAllSegments(targetDateTime){
         tds[1].textContent = item.raza || "";
         tds[2].textContent = item.peso != null ? `${item.peso} kg` : "";
         tds[3].textContent = item.vendedor || "";
+        tds[4].textContent = item.lugar || "";
       }
     }
 
