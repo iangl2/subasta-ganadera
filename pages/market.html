@@ -27,56 +27,126 @@
   </head>
   <body>
     <div data-include="/components/header.html"></div>
-<main class="marketplace">
-  <aside class="filtros">
-    <h2>Filtros</h2>
-    <form>
-      <label>
-        Raza:
-        <select>
-          <option>Brahman</option>
-          <option>Angus</option>
-          <option>Charolais</option>
-        </select>
-      </label>
 
-      <label>
-        Precio máximo:
-        <input type="number" name="precio" placeholder="Ej. 2000" />
-      </label>
+    <main class="marketplace">
+      <aside class="filtros">
+        <h2>Filtros</h2>
+        <form>
+          <label>
+            Raza:
+            <select>
+              <option>Brahman</option>
+              <option>Angus</option>
+              <option>Charolais</option>
+            </select>
+          </label>
 
-      <button type="submit">Aplicar</button>
-    </form>
-  </aside>
+          <label>
+            Precio máximo:
+            <input type="number" name="precio" placeholder="Ej. 2000" />
+          </label>
 
-  <section class="productos-section">
-    <div class="top-bar">
-      <h2>Subastas disponibles</h2>
-      <button class="crear-subasta">+ Crear Subasta</button>
-    </div>
+          <button type="submit">Aplicar</button>
+        </form>
+      </aside>
 
-    <div class="productos">
-      <article class="tarjeta">
-        <img src="vaca1.jpg" alt="Vaca Brahman" />
-        <h3>Vaca Brahman</h3>
-        <p>$1,500</p>
-        <button class="show-more">Ver más...</button>
-      </article>
+      <section class="productos-section">
+        <div class="top-bar">
+          <h2>Subastas disponibles</h2>
+          <button class="crear-subasta">+ Crear Subasta</button>
+        </div>
 
-      <article class="tarjeta">
-        <img src="vaca2.jpg" alt="Vaca Angus" />
-        <h3>Vaca Angus</h3>
-        <p>$1,700</p>
-        <button class="show-more">Ver más...</button>
-      </article>
-    </div>
-  </section>
-</main>
+        <div class="productos">
+          <article class="tarjeta">
+            <img src="vaca1.jpg" alt="Vaca Brahman" />
+            <h3>Vaca Brahman</h3>
+            <p>$1,500</p>
+            <button class="show-more">Ver más...</button>
+          </article>
+
+          <article class="tarjeta">
+            <img src="vaca2.jpg" alt="Vaca Angus" />
+            <h3>Vaca Angus</h3>
+            <p>$1,700</p>
+            <button class="show-more">Ver más...</button>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <div data-include="/components/footer.html"></div>
+    <div data-include="/components/modal.html"></div>
+    
+  <div class="wrapper">
+
+    <div class="login_box">
+      <button id="close-modal" >&times;</button>
+      <div class="login-header">
+        <span>Registrar Subasta</span>
+      </div>
+
+      <!-- Two-column form grid -->
+      <form class="form-grid" novalidate>
+        <div class="input_box">
+          <input type="text" id="name" class="input-field" required>
+          <label for="name" class="label">Nombre</label>
+          <i class="bx bx-tag icon"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="text" id="description" class="input-field" required>
+          <label for="description" class="label">Descripcion</label>
+          <i class="bx bx-book-open icon"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="datetime-local" id="date" class="input-field" required>
+          <label for="date" class="label">Fecha</label>
+          <i class="bx bx-calendar-event icon"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="text" id="place" class="input-field" required>
+          <label for="place" class="label">Lugar</label>
+          <i class="bx bx-pin icon"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="number" step="0.01" id="weight" class="input-field" required>
+          <label for="weight" class="label">Peso (kg)</label>
+          <i class="bx bx-dumbbell icon"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="text" id="breed" class="input-field" required>
+          <label for="breed" class="label">Raza</label>
+          <i class="bx bx-leaf icon"></i>
+        </div>
+
+        <div class="input_box">
+          <select id="sex" class="input-field" required>
+            <option value="" disabled selected hidden></option>
+            <option value="macho">Macho</option>
+            <option value="hembra">Hembra</option>
+          </select>
+          <label for="sex" class="label">Sexo</label>
+          <i class="bx bx-circle icon"></i>
+        </div>
+
+        <div class="input_box submit-box">
+          <input type="submit" class="input-submit" value="Registrar Subasta">
+        </div>
+      </form>
+
+    </div>
+
+
+  
+  </div>
 
     <script type="module" src="/js/loadData.js"></script>
     <script type="module" src="/js/createCards.js"></script>
     <script src="/js/include.js"></script>
+    <script type="module" src="/js/modal.js"></script>
   </body>
 </html>
